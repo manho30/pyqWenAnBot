@@ -1,7 +1,7 @@
 import telebot
 import requests
 
-bot = 'UR_TOKEN', parse_mode=None)
+bot = telebot.TeleBot('UR_TOKEN', parse_mode=None)
 
 @bot.message_handler(content_types=['text'])
 def handleMessage(m):
